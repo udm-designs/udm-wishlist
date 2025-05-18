@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --main: #adbcef;
+    --sec: #c8adf0;
+    --acc: #edd1e3;
+    --blk: #111;
+    --wht: #eee;
+    --grd: linear-gradient(to right, var(--main), var(--sec), var(--acc));
+}
+body {
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    background-color: var(--blk);
+    color: var(--wht);
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.05rem;
+    background: linear-gradient();
+    &:hover {
+        color: var(--acc);
+    }
+}
