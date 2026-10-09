@@ -6,7 +6,7 @@
 :root {
     --main: #adbcef;
     --sec: #c8adf0;
-    --acc: #edd1e3;
+    --acc: #5116c6ed;
     --blk: #111;
     --wht: #eee;
     --grd: linear-gradient(to right, var(--main), var(--sec), var(--acc));
@@ -21,8 +21,35 @@ a {
     text-decoration: none;
     display: inline-block;
     padding: 0.05rem;
-    background: linear-gradient();
+    color: var(--wht);
     &:hover {
         color: var(--acc);
+    }
+}
+.sc {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+}
+nav {
+    border-top: 0.5px solid var(--wht);
+    border-bottom: 0.5px solid var(--wht);
+    padding: 15px 0px;
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        font-weight: 600;
+    }
+    a {
+        color: var(--blk);
+        background: linear-gradient(45deg, var(--main), var(--sec));
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
